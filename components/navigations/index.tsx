@@ -67,7 +67,7 @@ export default function Navigation() {
                     menu.children ? (
                         <Accordion key={key} type="single" collapsible className="w-[200px]">
                             <AccordionItem value={`item-${key}`} className="w-full border-none hover:cursor-pointer">
-                                <AccordionTrigger className={`pl-4 pr-3 h-9 text-sm justify-between hover:no-underline  hover:bg-secondary/80`}>
+                                <AccordionTrigger className={`font-normal pl-4 pr-3 h-9 text-sm justify-between hover:no-underline  hover:bg-secondary/80`}>
                                     {menu.title}
                                 </AccordionTrigger>
                                 <AccordionContent className={`inline-flex items-center w-full hover:bg-secondary/80 h-9 mt-1 space-y-1 pb-0 pl-4 ${pathName === menu.href ? 'bg-secondary' : ''}`}>
